@@ -30,14 +30,14 @@ app.post('/usuario/:id', function(req, res) {
 
 });
 
-// MODIFICAR --> PUT
+// MODIFICAR -->   PUT
 app.put('/usuario/:id', function(req, res) {
     let id = req.params.id;
     res.json('put Usuario con id:' + id);
 });
 
 app.delete('/usuario', function(req, res) {
-    res.json('delete Usuario');
+    res.json('deleted Usuario');
 });
 
 const puerto = process.env.PORT;
